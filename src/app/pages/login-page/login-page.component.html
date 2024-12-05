@@ -1,64 +1,67 @@
-<div class="container" [ngClass]="{'active': active}">
 
-    <div class="form-container sign-up">
-        <form >
-            <h1>Create Account</h1>
-            <div class="social-icons">
-                <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
-                <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+<div class="body">
+    <div class="container" [ngClass]="{'active': active}">
+    
+        <div class="form-container sign-up">
+            <form >
+                <h1>Create Account</h1>
+                <div class="social-icons">
+                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                    <div class="input">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" placeholder="Enter your username">
                 </div>
                 <div class="input">
-                <i class="fa-solid fa-user"></i>
-                <input type="text" placeholder="Enter your username">
-            </div>
-            <div class="input">
-                <i class="fa-solid fa-envelope"></i>
-                <input type="email" placeholder="Enter your email">
-            </div>
-            <div class="input">
-                <i class="fa-solid fa-lock" ></i>
-                <input type="password" placeholder="Enter your password">
-            </div>
-            <span>Forget your Password?</span>
-            <button class="button" (click)="handleSignUp()">SIGN UP</button>
-        </form>
-    </div>
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" placeholder="Enter your email">
+                </div>
+                <div class="input">
+                    <i class="fa-solid fa-lock" ></i>
+                    <input type="password" placeholder="Enter your password">
+                </div>
+                <span>Forget your Password?</span>
+                <button class="button" (click)="handleSignUp()">SIGN UP</button>
+            </form>
+        </div>
+        
+        <div class="form-container sign-in" >
+            <form >
+                <h1>Sign in to DealNest</h1>
+                <div class="social-icons">
+                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                 </div>
+                <div class="input">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" placeholder="Enter your username">
+                </div>
+                <div class="input">
+                    <i class="fa-solid fa-lock" ></i>
+                    <input type="password" placeholder="Enter your password">
+                </div>
+                <span>Forget your Password?</span>
+                <button class="button" >SIGN IN</button>
+            </form>
+        </div>
     
-    <div class="form-container sign-in" >
-        <form >
-            <h1>Sign in to DealNest</h1>
-            <div class="social-icons">
-                <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
-                <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
-             </div>
-            <div class="input">
-                <i class="fa-solid fa-user"></i>
-                <input type="text" placeholder="Enter your username">
-            </div>
-            <div class="input">
-                <i class="fa-solid fa-lock" ></i>
-                <input type="password" placeholder="Enter your password">
-            </div>
-            <span>Forget your Password?</span>
-            <button class="button" >SIGN IN</button>
-        </form>
-    </div>
-
-    <div class="toggle-container">
-        <div class="toggle">
-            <div class="toggle-panel toggle-left">
-                <h1>Welcome Back!</h1>
-                <p>To keep connected with us please
-                    login with your personal info</p>
-                <button class="hidden" (click)="active = !active" id="login">Sign In</button>
-            </div>
-            <div class="toggle-panel toggle-right">
-                <h1>Hello, Investors</h1>
-                <p>Enter your personal details
-                    and strat journy with us.</p>
-                <button class="hidden" (click)="active = !active" id="register">Sign Up</button>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Welcome Back!</h1>
+                    <p>To keep connected with us please
+                        login with your personal info</p>
+                    <button class="hidden" (click)="active = !active" id="login">Sign In</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>Hello, Investors</h1>
+                    <p>Enter your personal details
+                        and strat journy with us.</p>
+                    <button class="hidden" (click)="active = !active" id="register">Sign Up</button>
+                </div>
             </div>
         </div>
     </div>

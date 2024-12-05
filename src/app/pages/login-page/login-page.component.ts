@@ -1,21 +1,24 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'login-page',
   imports: [CommonModule],
   templateUrl: './login-page.component.html',
-  styleUrl: './login-page.component.css'
+  styleUrls: ['./login-page.component.css']
 })
 
 
 export class LoginPageComponent {
-  active = true ;
-  handleSignUp = () => {
+  constructor(private router: Router){}
+  active = false ;
 
+  handleSignUp = () => {
+    this.router.navigate(['/hero']);
   }
 
   handleSignIn = () => {
-
+    this.router.navigate(['/hero']);
   }
 }

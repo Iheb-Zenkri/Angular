@@ -1,0 +1,97 @@
+.logo{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: black;
+    mix-blend-mode: darken;
+}
+.btn{
+    position: absolute;
+    top: 25px;
+    right: 30px;
+    width: 162px;
+    height: 42px;
+    background-image: linear-gradient(120deg, #0D6EFD 0%, #9EC5FE  60%, #EA7FFC  100%);
+    background-size: 200% auto;
+    transition: 0.8s;
+    box-shadow: 0 0 20px #eee;
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 45px;
+    border: none;
+    border-radius: 12px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    cursor: pointer;
+
+}
+.btn:hover{
+    background-position: right center;
+}
+.modern-shape{
+    position: absolute;
+    top: 70px;
+    right: 0px;
+    padding: 50px;
+}
+
+.modern-shape img{
+    width: 680px;
+    transform: rotate(25deg);
+    filter: drop-shadow(0px 0 300px #673AEC );
+}
+
+
+.container{
+    height: 100vh;
+    width: 50vw;
+    display:flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-left: 70px;
+    margin-top: 200px;
+    gap: 30px;
+}
+
+.container h1 {
+    font-size: 48px;
+    color: #1D1C24;
+    line-height: 65px;
+}
+.container span {
+    font-size: 48px;
+    color: #8468F5;
+}
+
+.container h3{
+    font-size: 24px;
+    font-weight: 400;
+    color: #A99FB3;
+}
+
+.container button{
+    width: 300px;
+    height: 50px;
+    background-image: linear-gradient(120deg, #8D3AEC 0%, #EA7FFC  60%, #8D3AEC  100%);
+    background-size: 200% auto;
+    transition: 0.8s;
+    box-shadow: 0 4px 80px #8D3AECa0;
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 45px;
+    border: none;
+    border-radius: 12px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.container button:hover{
+    background-position: right center;
+}
