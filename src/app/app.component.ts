@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { HeropageComponent } from "./pages/heropage/heropage.component";
 import { RouterOutlet } from '@angular/router';
 
 @Component({

@@ -11,8 +11,11 @@ import { Router } from '@angular/router';
 
 
 export class LoginPageComponent {
-  constructor(private router: Router){}
+  constructor(private router: Router){
+    this.initTransition = false ;
+  }
   active = false ;
+  initTransition = true ;
 
   handleSignUp = () => {
     this.router.navigate(['/hero']);

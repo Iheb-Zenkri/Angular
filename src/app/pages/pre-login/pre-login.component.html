@@ -1,0 +1,30 @@
+<div class="body">
+    <div class="container">
+        <div class="form">
+            <img src="logo.png" alt="logo" class="logo">
+            <h2>How Would You Like to Proceed?</h2>
+            <h4>Are you here to bring your vision to life or to discover the 
+                next big thing? Let's build something amazing together.</h4>
+            
+            <div class="selection-box " [ngClass]="{'active': !isInvestor}" (click)="isInvestor = false" >
+                <i class="fa-solid fa-briefcase"></i>
+                <div class="description">
+                    <h5>Entrepreneur</h5>
+                    <span>Start your journey to connect with investors and grow your idea.</span>
+                    <i *ngIf="!isInvestor" class="fa-solid fa-circle-check check"></i>
+                </div>
+            </div>
+
+            <div class="selection-box" [ngClass]="{'active': isInvestor}" (click)="isInvestor = true">
+                <i class="fa-solid fa-wallet"></i>
+                <div class="description">
+                    <h5>Investor</h5>
+                    <span>Discover and support innovative startups worldwide.</span>
+                    <i *ngIf="isInvestor" class="fa-solid fa-circle-check check"></i>
+                </div>
+            </div>
+            
+            <button (click)="submit()">Continue</button>
+        </div>
+    </div>
+</div>

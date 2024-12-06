@@ -1,7 +1,6 @@
 
-<div class="body">
+<div class="body"  [ngClass]="{'no-trans': initTransition}">
     <div class="container" [ngClass]="{'active': active}">
-    
         <div class="form-container sign-up">
             <form >
                 <h1>Create Account</h1>
