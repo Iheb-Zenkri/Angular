@@ -1,0 +1,32 @@
+
+<div class="dropdown-menu" [class.show]="dropdownVisible">
+    <div class="profile-data">
+        <img src="userPic.jpg" alt="Profile">
+        <div class="info">
+            <h2>{{username}}</h2>
+            <h4>{{email}}</h4>
+        </div>
+    </div>
+    <ul>
+        <li> <div class="personal-info" (click)="displayMessage('button for navigation to user\'s personal info.')">
+            <img src="info-icon.png" alt="icon">
+            Personal Info
+        </div></li>
+
+        <li><div class="personal-info" (click)="displayMessage('button for navigation to user\'s profile settings.')">
+            <img src="settings-icon.png" alt="icon">
+            Settings
+        </div></li>
+        
+        <li><div class="personal-info" (click)="displayMessage('button for navigation to help center.')">
+            <img src="help-icon.png" alt="icon">
+            Help Center
+        </div></li>
+    </ul>
+    <div class="logout" (click)="logout()">
+        <div class="personal-info">
+            <img src="logout.png" alt="icon">
+            Sign out
+        </div>
+    </div>
+</div>

@@ -12,16 +12,18 @@ import { Router } from '@angular/router';
 
 export class LoginPageComponent {
   constructor(private router: Router){
-    this.initTransition = false ;
+    this.userType = localStorage.getItem('userType')??"";
+    localStorage.removeItem('userType');
   }
+  
   active = false ;
-  initTransition = true ;
-
+  userType : String ;
   handleSignUp = () => {
     this.router.navigate(['/hero']);
   }
 
   handleSignIn = () => {
-    this.router.navigate(['/hero']);
+    localStorage.setItem('isLoggedIn','true');
+    this.router.navigate(['/home']);
   }
 }

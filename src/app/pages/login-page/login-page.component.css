@@ -7,10 +7,6 @@
     flex-direction: column;
 }
 
-.no-trans{
-    transition: none;
-}
-
 .container{
     background-color: #fff;
     border-radius: 12px;

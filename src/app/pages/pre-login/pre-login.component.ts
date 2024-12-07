@@ -13,6 +13,7 @@ export class PreLoginComponent {
 
   constructor(private router :Router){}
   submit(){
+    localStorage.setItem('userType', this.isInvestor? 'Investor' : 'Entrepreneur')
     this.router.navigate(['\login']);
   }
 }

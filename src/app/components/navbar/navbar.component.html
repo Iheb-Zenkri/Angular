@@ -1,1 +1,32 @@
-<p>navbar works!</p>
+<nav class="navbar">
+    <div class="navbar-logo">
+      <img src="logo.png" class="logo"/>
+    </div>
+  
+    <ul class="navbar-items">
+      <li><a routerLink="/home" routerLinkActive="active">Home</a></li>
+      <li><a routerLink="/profile" routerLinkActive="active">Profile</a></li>
+      <li><a routerLink="/dashboard" routerLinkActive="active">Dashboard</a></li>
+    </ul>
+  
+    <div class="navbar-icons">
+      <!-- Message Icon with Badge -->
+      <div class="icon-wrapper">
+        <img src="msgIcon.png">
+        <span class="badge bg1" [hidden]="true"></span>
+      </div>
+  
+      <!-- Notification Icon with Badge -->
+      <div class="icon-wrapper">
+        <img src="notifIcon.png">
+        <span class="badge bg2" [hidden]="true"></span>
+      </div>
+  
+      <!-- Profile Picture -->
+      <div class="profile-picture" (click)="toggleDropdown()">
+        <img src="userPic.jpg" alt="Profile" />
+        <profile-dropdow [dropdownVisible] = "dropdownVisible"></profile-dropdow>
+      </div>
+    </div>
+  </nav>
+  

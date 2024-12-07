@@ -1,5 +1,5 @@
 
-<div class="body"  [ngClass]="{'no-trans': initTransition}">
+<div class="body">
     <div class="container" [ngClass]="{'active': active}">
         <div class="form-container sign-up">
             <form >
@@ -43,7 +43,7 @@
                     <input type="password" placeholder="Enter your password">
                 </div>
                 <span>Forget your Password?</span>
-                <button class="button" >SIGN IN</button>
+                <button class="button" (click)="handleSignIn()" >SIGN IN</button>
             </form>
         </div>
     
