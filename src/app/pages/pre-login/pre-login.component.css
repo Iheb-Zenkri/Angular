@@ -116,7 +116,7 @@
 button{
     background-image: linear-gradient(120deg, #4727E7 0%, #6588c9  50%, #4727E7  100%);
     background-size: 200% auto;
-    transition: 0.8s;
+    transition: background-position 0.8s ease;
     box-shadow: 0 0 20px #eee;
     color: #fff;
     font-size: 16px;

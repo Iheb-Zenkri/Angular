@@ -1,0 +1,20 @@
+<div class="item" [ngClass]="{'unread': unread}" (click)="displayMessage()">
+    <img [src]="image" class="image" />
+    <span class="time">{{ time }}</span>
+    <span class="date">{{ date }}</span>
+    <div class="details">
+      <h4 class="content"><strong class="owner">{{ owner }}</strong> 
+        {{ content }} <strong class="owner">{{ source }}</strong></h4>
+      
+        <div [ngSwitch]="type" >
+        <div *ngSwitchCase="'follow'" class="btn-container">
+          <button class="active-btn">Follow back</button>
+        </div>
+        <div *ngSwitchCase="'invite'" class="btn-container">
+          <button class="decline-btn">Decline</button>
+          <button class="active-btn">Accept</button>
+        </div>
+      </div>
+    </div>
+</div>
+  

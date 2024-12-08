@@ -6,6 +6,8 @@ import { authGuard } from './services/Guards/auth.guard';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { loggedInGuard } from './services/Guards/logged-in.guard';
 import { MainLayoutComponent } from './pages/main-layout/main-layout.component';
+import { ProfilePageComponent } from './pages/profile-page/profile-page.component';
+import { DashboardPageComponent } from './pages/dashboard-page/dashboard-page.component';
 
 export const routes: Routes = [
     {path:'', component: HeropageComponent, pathMatch: 'full'},
@@ -16,6 +18,8 @@ export const routes: Routes = [
         canActivate: [loggedInGuard],
         children:[
             {path: 'home', component:HomePageComponent},
+            {path: 'profile/:username', component:ProfilePageComponent},
+            {path: 'dashboard/:username', component:DashboardPageComponent},
         ]
     },
 

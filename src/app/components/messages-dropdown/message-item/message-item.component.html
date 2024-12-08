@@ -1,0 +1,9 @@
+<div class="message-item" [ngClass]="{'unread': unread}" (click)="displayMessage()">
+    <img [src]="image" class="message-image" />
+    <div class="message-details">
+      <h4 class="message-owner">{{ owner }}</h4>
+      <p class="message-content">{{ content }}</p>
+    </div>
+    <span class="message-time">{{ time }}</span>
+</div>
+  

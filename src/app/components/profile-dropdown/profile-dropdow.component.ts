@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
   styleUrl: './profile-dropdow.component.css'
 })
 export class ProfileDropdowComponent {
-  @Input() dropdownVisible!: boolean;
+  @Input() dropdownVisibleProfile!: boolean;
 
   username: String;
   email: String;

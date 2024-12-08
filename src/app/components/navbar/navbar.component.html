@@ -5,28 +5,26 @@
   
     <ul class="navbar-items">
       <li><a routerLink="/home" routerLinkActive="active">Home</a></li>
-      <li><a routerLink="/profile" routerLinkActive="active">Profile</a></li>
-      <li><a routerLink="/dashboard" routerLinkActive="active">Dashboard</a></li>
+      <li><a routerLink="/profile/username" routerLinkActive="active">Profile</a></li>
+      <li><a routerLink="/dashboard/username" routerLinkActive="active">Dashboard</a></li>
     </ul>
   
-    <div class="navbar-icons">
-      <!-- Message Icon with Badge -->
-      <div class="icon-wrapper">
+    <div class="navbar-icons" appClickOutside (clickOutside)="closeDropdowns()">
+      <div class="icon-wrapper" (click)="toggleDropdownMessage()">
         <img src="msgIcon.png">
-        <span class="badge bg1" [hidden]="true"></span>
+        <span class="badge bg1"></span>
+        <messages-dropdown [dropdownVisibleMessage] = "dropdownVisibleMessage"></messages-dropdown>
       </div>
   
-      <!-- Notification Icon with Badge -->
-      <div class="icon-wrapper">
+      <div class="icon-wrapper" (click)="toggleDropdownNotification()">
         <img src="notifIcon.png">
-        <span class="badge bg2" [hidden]="true"></span>
+        <span class="badge bg2"></span>
+        <notification-dropdown [dropdownVisibleNotification] = "dropdownVisibleNotification"></notification-dropdown>
       </div>
   
-      <!-- Profile Picture -->
-      <div class="profile-picture" (click)="toggleDropdown()">
+      <div class="profile-picture" (click)="toggleDropdownProfile()">
         <img src="userPic.jpg" alt="Profile" />
-        <profile-dropdow [dropdownVisible] = "dropdownVisible"></profile-dropdow>
+        <profile-dropdow [dropdownVisibleProfile] = "dropdownVisibleProfile"></profile-dropdow>
       </div>
     </div>
-  </nav>
-  
+  </nav>  

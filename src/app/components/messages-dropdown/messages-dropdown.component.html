@@ -1,0 +1,18 @@
+<div class="dropdown-menu" [class.show]="dropdownVisibleMessage">
+    <h2>Messages</h2>
+    <ul class="messages-list">
+        <li *ngFor="let message of messages">
+          <message-item 
+            [image]="message.image" 
+            [owner]="message.owner" 
+            [content]="message.content" 
+            [time]="message.time" 
+            [unread]="message.state"
+            >
+          </message-item>
+        </li>
+    </ul>   
+    <div class="all-btn">
+      <button (click)="allMessages()">View all messages</button>
+    </div> 
+</div>

@@ -1,0 +1,21 @@
+<div class="dropdown-menu" [class.show]="dropdownVisibleNotification">
+    <h2>Notifications</h2>
+    <ul class="notification-list">
+        <li *ngFor="let notification of notifications">
+            <notification-item
+            [image]="notification.image" 
+            [owner]="notification.owner" 
+            [content]="notification.content" 
+            [time]="notification.time" 
+            [unread]="notification.unread"
+            [date]="notification.date"
+            [type]="notification.type"
+            [source]="notification.source"
+            >heyy</notification-item>
+        </li>
+      </ul>
+      <div class="all-btn">
+        <button (click)="allNotifications()">View all notifications</button>
+      </div>
+    
+</div>
