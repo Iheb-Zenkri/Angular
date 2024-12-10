@@ -8,10 +8,11 @@ import { loggedInGuard } from './services/Guards/logged-in.guard';
 import { MainLayoutComponent } from './pages/main-layout/main-layout.component';
 import { ProfilePageComponent } from './pages/profile-page/profile-page.component';
 import { DashboardPageComponent } from './pages/dashboard-page/dashboard-page.component';
+import { RestrictAuthGuard } from './services/Guards/restrict-auth.guard';
 
 export const routes: Routes = [
-    {path:'', component: HeropageComponent, pathMatch: 'full'},
-    
+    {path:'', component: HeropageComponent,canActivate: [RestrictAuthGuard], pathMatch: 'full'},
+
     {
         path: '',
         component: MainLayoutComponent,
@@ -23,8 +24,7 @@ export const routes: Routes = [
         ]
     },
 
-    {path:'pre-login', component: PreLoginComponent},
-    {path:'login', component: LoginPageComponent, canActivate: [authGuard]},
+    {path:'pre-login', component: PreLoginComponent,canActivate: [RestrictAuthGuard]},
+    {path:'login', component: LoginPageComponent, canActivate: [authGuard,RestrictAuthGuard]},
     {path:'**', redirectTo: ''}
 ];
-

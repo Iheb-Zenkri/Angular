@@ -20,8 +20,8 @@ import { ClickOutsideDirective } from '../../services/click-outside.directive';
 export class NavbarComponent {
 
   dropdownVisibleProfile = false;
-  dropdownVisibleMessage= true;
-  dropdownVisibleNotification = true;
+  dropdownVisibleMessage= false;
+  dropdownVisibleNotification = false;
 
   toggleDropdownProfile() {
     this.dropdownVisibleProfile = !this.dropdownVisibleProfile;

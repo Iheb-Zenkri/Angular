@@ -7,13 +7,14 @@
     padding: 10px 20px;
     position:sticky;
     width: 100%;
-    height: 85px;
+    height: 70px;
     top: 0;
     z-index: 100;
   }
+
   
 .logo {
-    height: 40px;
+    height: 30px;
     background-color: black;
     mix-blend-mode:darken;
 }
@@ -21,8 +22,8 @@
   .navbar-items {
     list-style: none;
     display: flex;
-    gap: 80px;
-    margin-left: 28%;
+    gap: 90px;
+    margin-right: 25%;
   }
   
   .navbar-items li {
@@ -30,30 +31,28 @@
   }
   
   .navbar-items a {
-    padding: 0 12px 10px 15px ;
     text-decoration: none;
-    color: #3f5b56;
-    font-weight: 500;
-    font-size: 18px;
-    letter-spacing: 2px;
+    color: #6D6275;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 1.5px;
     cursor: pointer;
   }
   
   .navbar-items a.active {
-    color: #3D0A91;
-    border-bottom: 3px solid #007bff;
-    border-radius: 2px;
-    font-weight: 600;
+    color: #520DC2;
+    border-radius: 1.5px;
+    font-weight: 700;
   }
   
   .navbar-icons {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 50px;
-    margin-right: 40px;
+    gap: 30px;
+    margin-right: 15px;
     border-left: solid 2px #D7EEE9;
-    padding-left: 50px;
+    padding-left: 25px;
   }
   
   .icon-wrapper {
@@ -90,7 +89,7 @@
   }
   
   .profile-picture img {
-    margin-left: 30px;
+    margin-left: 25px;
     width: 40px;
     height: 40px;
     border-radius: 50%;
