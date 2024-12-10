@@ -2,14 +2,14 @@
     display: none;
     position: absolute;
     right: -10px;
-    margin-top: 20px;
+    margin-top: 10px;
     background-color: #fff;
     list-style: none;
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 10px 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 12px 10px 15px 10px;
+    padding: 10px;
     width: 300px;
 }
 
@@ -18,17 +18,17 @@
 }
 
 .dropdown-menu h2{
-  font-family: 'Open Sans';
-  letter-spacing: 1.5px;
-  font-size: 28px;
-  font-weight: 600;
-  padding: 0 0 15px 5px;
+  color: #3B3540;
+  letter-spacing: 2px;
+  font-size: 24px;
+  font-weight: 700;
+  padding: 0 0 10px 5px;
 }
 .messages-list {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    max-height: 250px; 
+    max-height: 300px; 
     overflow-y:scroll; 
   }
   .messages-list::-webkit-scrollbar{
@@ -36,19 +36,24 @@
   }
   
   .all-btn{
+    padding-top: 8px;
     border-top: solid 1px #D7EEE9;
-    padding: 12px 10px 0 0;
     display: flex;
     justify-content: end;
   }
 
   .all-btn button{
-    padding: 10px 30px;
+    padding: 8px 12px;
     border: none;
     border-radius: 10px;
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 400;
-    background-color: #38AA95;
+    background-color: #EA7FFC;
     color: #fff;
     cursor: pointer;
+    transition: background-color 0.5s ease;
+  }
+
+  .all-btn button:hover{
+    background-color: #d272e2;
   }
