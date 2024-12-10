@@ -39,21 +39,21 @@
     padding-top: 8px;
     border-top: solid 1px #D7EEE9;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
   }
 
   .all-btn button{
-    padding: 8px 12px;
-    border: none;
-    border-radius: 10px;
+    padding: 8px 24px;
+    border: 1px solid #b2d8ff;
+    border-radius: 6px;
     font-size: 11px;
-    font-weight: 400;
-    background-color: #EA7FFC;
-    color: #fff;
+    font-weight: 600;
+    background-color:  #FFF;
+    color: #0058b2;
     cursor: pointer;
-    transition: background-color 0.5s ease;
+    transition: background-color 0.4s ease;
   }
 
   .all-btn button:hover{
-    background-color: #d272e2;
+    box-shadow: 0 0 10px #007fff30;
   }
