@@ -7,8 +7,8 @@ import { HomePageComponent } from './pages/home-page/home-page.component';
 import { loggedInGuard } from './services/Guards/logged-in.guard';
 import { MainLayoutComponent } from './pages/main-layout/main-layout.component';
 import { ProfilePageComponent } from './pages/profile-page/profile-page.component';
-import { DashboardPageComponent } from './pages/dashboard-page/dashboard-page.component';
 import { RestrictAuthGuard } from './services/Guards/restrict-auth.guard';
+import { ProjectsPageComponent } from './pages/projects-page/projects-page.component';
 
 export const routes: Routes = [
     {path:'', component: HeropageComponent,canActivate: [RestrictAuthGuard], pathMatch: 'full'},
@@ -20,7 +20,7 @@ export const routes: Routes = [
         children:[
             {path: 'home', component:HomePageComponent},
             {path: 'profile/:username', component:ProfilePageComponent},
-            {path: 'dashboard/:username', component:DashboardPageComponent},
+            {path: 'projects/:username', component:ProjectsPageComponent},
         ]
     },
 

@@ -3,7 +3,9 @@
     <div class="posts">
         <searchbar></searchbar>
         <ul class="project-list">
-
+            <li *ngFor="let project of projectsList">
+                <project-post [project]="project"></project-post>
+            </li>
         </ul>
     </div>
 
