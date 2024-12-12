@@ -1,0 +1,22 @@
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+}
+
+.container .posts{
+    padding: 30px 50px;
+    width: 75%;
+    min-width: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.container .suggestion{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}

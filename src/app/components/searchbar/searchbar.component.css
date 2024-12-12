@@ -1,0 +1,132 @@
+.search-area{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: start;
+  align-items: start;
+}
+
+.label{
+  margin-left: 20px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #3B3540;
+}
+
+.search-container{
+    display: flex;
+    padding: 0 15px;
+    border-radius: 50px;
+    background-color: #f6f6f6;
+    align-items: center;
+    width: 700px;
+    border: solid 1px #f6f6f6;
+}
+.search-container:has(input:focus){
+  background-color: #fafafa;
+  border-color: #c5c5c5;
+}
+
+.search-bar{
+    background-color: transparent;
+    padding: 12px 5px;
+    border: none;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    color : #3B3540 ;
+    width: 100%;
+    outline: none;
+}
+
+.search-bar::placeholder{
+  color: #c5c5c5;
+  font-size: 14px;
+  letter-spacing: 0.4px;
+  font-weight: 300;
+}
+
+.search-bar input:focus{
+    outline: none;
+    border: none;
+}
+
+.filter-container{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-top: 20px;
+  gap: 30px;
+}
+
+.filter-container label{
+  margin-left: 10px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: #3B3540;
+}
+
+.selection-box{
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  min-width: 150px;
+  padding: 12px;
+  margin-top: 5px;
+  background-color: #fff;
+  border: 1px solid #c5c5c5;
+  border-radius: 8px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+  font-weight: 500;
+  color: #3B3540;
+  cursor: pointer;
+  position: relative;
+}
+
+.selection-box i{
+  color: #3B3540d0;
+}
+
+.dropdown {
+  position: absolute;
+  background-color: #3B3540;
+  top: 45px;
+  left: 0;
+  width:max-content;
+  min-width: 110%;
+  background-color: #fff;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.08);
+  z-index: 10;
+  display: none;
+}
+
+.dropdown.active{
+  display: block;
+}
+
+.dropdown li{
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 10px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.dropdown li:hover{
+  background-color: #f6f6f6;
+}
+
+.dropdown span{
+  padding: 2px 4px;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+  color: #b6b6b6;
+  font-size: 11px;
+  font-weight: 500;
+}

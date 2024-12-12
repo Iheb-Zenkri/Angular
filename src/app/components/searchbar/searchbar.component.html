@@ -1,0 +1,81 @@
+
+<div class="search-area">
+    <label class="label">Find spesific projects </label>
+    <div class="search-container">
+        <input 
+        type="text"
+        placeholder="Search projects..."
+        [(ngModel)]="searchQuery" 
+        (input)="onSearch()"
+        class="search-bar"
+        />
+        <img src="search-icon.png" width="25px" style="cursor: pointer" (click)="onSearch()"/>
+    </div>
+    
+    <div class="filter-container">
+        <div class="filter-box">
+            <label>Field</label>
+            <div class="selection-box" (click)="isActiveField = !isActiveField" 
+                    appClickOutside (clickOutside)="isActiveField = false">
+                {{selctedField}}
+                <i class="fa-solid fa-caret-down"></i>
+                <div class="dropdown" [ngClass]="{'active': isActiveField} ">
+                    <ul>
+                        <li *ngFor="let item of fields" (click)="selctedField = item">
+                            {{item}}
+                            <span>{{1000%item.length*100+item.length*10}}</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="filter-box">
+            <label>Funding amount</label>
+            <div class="selection-box" (click)="isActiveAmount = !isActiveAmount"
+                    appClickOutside (clickOutside)="isActiveAmount = false">
+                {{selctedAmount}}
+                <i class="fa-solid fa-caret-down"></i>
+                <div class="dropdown" [ngClass]="{'active': isActiveAmount}">
+                    <ul>
+                        <li *ngFor="let item of funds" (click)="selctedAmount = item" >
+                            {{item}}
+                            <span>{{1000%item.length*100+item.length*10}}</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="filter-box">
+            <label>Location</label>
+            <div class="selection-box" (click)="isActiveLocation = !isActiveLocation"
+                 appClickOutside (clickOutside)="isActiveLocation = false">
+                {{selctedLocation}}
+                <i class="fa-solid fa-caret-down"></i>
+                <div class="dropdown" [ngClass]="{'active': isActiveLocation} ">
+                    <ul>
+                        <li *ngFor="let item of locations" (click)="selctedLocation = item">
+                            {{item}}
+                            <span >{{1000%item.length*10+item.length*10}}</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="filter-box">
+            <label>Technologie</label>
+            <div class="selection-box" (click)="isActiveTech = !isActiveTech"
+                    appClickOutside (clickOutside)="isActiveTech = false">
+                {{selctedTech}}
+                <i class="fa-solid fa-caret-down"></i>
+                <div class="dropdown" [ngClass]="{'active': isActiveTech} ">
+                    <ul>
+                        <li *ngFor="let item of techs" (click)="selctedTech = item" >
+                            {{item}}
+                            <span>{{1000%item.length*10+item.length*10}}</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
