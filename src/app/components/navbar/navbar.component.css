@@ -4,6 +4,7 @@
     justify-content:space-between;
     align-items:center;
     background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 10px 20px;
     position:sticky;
     width: 100%;
@@ -14,7 +15,7 @@
 
   
 .logo {
-    height: 30px;
+    height: 35px;
     background-color: black;
     mix-blend-mode:darken;
 }
@@ -22,8 +23,8 @@
   .navbar-items {
     list-style: none;
     display: flex;
-    gap: 90px;
-    margin-right: 25%;
+    gap: 120px;
+    margin-left: 30%;
   }
   
   .navbar-items li {

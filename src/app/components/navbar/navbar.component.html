@@ -6,10 +6,11 @@
     <ul class="navbar-items">
       <li><a routerLink="/home" routerLinkActive="active">Home</a></li>
       <li><a routerLink="/profile/username" routerLinkActive="active">Profile</a></li>
-      <li><a routerLink="/dashboard/username" routerLinkActive="active">Dashboard</a></li>
+      <li><a routerLink="/projects/username" routerLinkActive="active">My Projects</a></li>
     </ul>
   
     <div class="navbar-icons" appClickOutside (clickOutside)="closeDropdowns()">
+     
       <div class="icon-wrapper" (click)="toggleDropdownMessage()">
         <img src="msgIcon.png">
         <span class="badge bg1"></span>
@@ -26,5 +27,6 @@
         <img src="userPic.jpg" alt="Profile" />
         <profile-dropdow [dropdownVisibleProfile] = "dropdownVisibleProfile"></profile-dropdow>
       </div>
+    
     </div>
   </nav>  
