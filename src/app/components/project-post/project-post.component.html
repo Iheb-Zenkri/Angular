@@ -1,21 +1,27 @@
 <div class="project-card">
-    <div class="layer"></div>
-    <img [src]="project.img" class="project-img">
-    <div class="info">
-        <div class="header">
-            <span><i class="fa-solid fa-location-dot" ></i>
-                 {{project.location}}</span>
-            <i *ngIf="!islicked" class="fa-regular fa-heart" (click)="islicked=true"></i>
-            <i *ngIf="islicked" class="fa-solid fa-heart" (click)="islicked=false"></i>
+    <div class="user-info">
+        <img [src]="project.ownerImg" >
+        <span>
+            <h2>{{project.ownerName}}</h2>
+            {{project.location}}
+        </span>
+        <h6>{{project.date}}</h6>
+    </div>
+    <div class="project-img">
+        <div class="layer"></div>
+        <img [src]="project.img">
+        <div class="title">
+            {{project.title}}
         </div>
-        <div class="body">
-            <h4>{{project.title}}</h4>
+        <div class="field">
+            {{fields[0]}}
         </div>
     </div>
-    <span class="fund">$ {{project.fundingAmount}}</span>
-    <div class="more-btn">
-        <span>more</span>
-        <i class="fa-solid fa-arrow-up-right-from-square"></i>
-    </div>
+
+    <div class="footer">
+        <i *ngIf="!islicked" class="fa-regular fa-heart" (click)="islicked=true"></i>
+        <i *ngIf="islicked" class="fa-solid fa-heart" (click)="islicked=false"></i>
+        <i class="fa-solid fa-up-right-from-square external"></i>    </div>
 </div>
+
   

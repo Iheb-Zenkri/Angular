@@ -21,6 +21,7 @@
     align-items: center;
     width: 700px;
     border: solid 1px #f6f6f6;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 .search-container:has(input:focus){
   background-color: #fafafa;

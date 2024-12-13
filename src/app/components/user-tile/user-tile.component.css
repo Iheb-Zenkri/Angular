@@ -1,0 +1,36 @@
+.tile{
+    width: 80%;
+    height: auto;
+    display: flex;
+    gap: 15px;
+    border-radius: 8px;
+    padding: 10px;
+    margin-left: 30px;
+    cursor: pointer;
+    transition: background 0.2s ease-in-out;
+}
+
+.tile:hover{
+    background: #f2f4f2;
+}
+
+.tile img{
+    object-fit: cover;
+    object-position:center;
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+}
+
+.info h2{
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.6px;
+    color: #3B3540;
+}
+
+.info span{
+    font-size: 12px;
+    letter-spacing: 0.4px;
+    color: #3B3540a0;
+}

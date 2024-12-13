@@ -17,7 +17,15 @@ export class ProjectPostComponent {
     industry: string;
     fundingAmount: number;
     location: string;
+    date: String;
   };
 
+  fields: string[] = [];
+
+  ngOnChanges(): void {
+    if (this.project) {
+      this.fields = this.project.industry.split(" ");
+    }
+  }
   islicked = false ;
 }

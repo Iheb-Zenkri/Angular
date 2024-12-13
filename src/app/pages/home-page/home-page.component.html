@@ -10,6 +10,17 @@
     </div>
 
     <div class="suggestion">
-        
+        <h2>Following<i class="fa-solid fa-ellipsis"></i></h2>
+        <li *ngFor="let user of followers">
+            <user-tile
+                [user]="user"
+            ></user-tile>
+        </li>
+        <h2>Most popular<i class="fa-solid fa-ellipsis"></i></h2>
+        <li *ngFor="let user of popular">
+            <user-tile
+                [user]="user"
+            ></user-tile>
+        </li>
     </div>
 </div>
