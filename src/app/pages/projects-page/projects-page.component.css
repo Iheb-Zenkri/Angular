@@ -1,0 +1,14 @@
+.main{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+
+.main img{
+    width: 100%;
+    object-fit:contain;
+}
+
+.main h2{
+    position: absolute;
+}

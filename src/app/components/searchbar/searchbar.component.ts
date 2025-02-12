@@ -10,8 +10,8 @@ import { ClickOutsideDirective } from '../../services/click-outside.directive';
   styleUrl: './searchbar.component.css'
 })
 export class SearchbarComponent {
-[x: string]: any;
 
+  searchDisplay = false ;
   searchQuery: string = '';
 
   selctedField : String ='All';
@@ -47,8 +47,9 @@ export class SearchbarComponent {
     "Web-Based Platforms"
   ] ;
 
-  onSearch() {
+  onSearch(isFocused: boolean) {
     const query = this.searchQuery.toLowerCase();
+    this.searchDisplay = isFocused ;
   }
 
   isActiveField = false ;

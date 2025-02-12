@@ -1,15 +1,18 @@
 
 <div class="search-area">
+    <div class="description" [ngClass]="{'onSearch':searchDisplay}">
+
+    </div>
     <label class="label">Find spesific projects </label>
     <div class="search-container">
         <input 
         type="text"
         placeholder="Search projects..."
         [(ngModel)]="searchQuery" 
-        (input)="onSearch()"
+        (focus)="onSearch(true)"
         class="search-bar"
         />
-        <img src="search-icon.png" width="25px" style="cursor: pointer" (click)="onSearch()"/>
+        <img src="search-icon.png" width="25px" style="cursor: pointer" (click)="onSearch(true)"/>
     </div>
     
     <div class="filter-container">

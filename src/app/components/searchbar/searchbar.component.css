@@ -4,8 +4,24 @@
   gap: 10px;
   justify-content: start;
   align-items: start;
+  padding: 30px 200px;
+  border-radius: 16px;
+  position: relative;
+  z-index: 100;
 }
 
+.description{
+  height: 300px;
+  width: 100%;
+  transition: height 0.7s ease-in-out,opacity 0.7s ease-in-out;
+  display: flex;
+  opacity: 1; 
+}
+
+.description.onSearch{
+  height: 0;
+  opacity: 0; 
+}
 .label{
   margin-left: 20px;
   font-size: 15px;
@@ -101,12 +117,12 @@
   border-radius: 8px;
   border: 1px solid #ccc;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.08);
-  z-index: 10;
   display: none;
 }
 
 .dropdown.active{
   display: block;
+  z-index: 10;
 }
 
 .dropdown li{

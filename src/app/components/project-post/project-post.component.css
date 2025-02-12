@@ -83,7 +83,7 @@
 
 .title{
     position: absolute;
-    z-index: 100;
+    z-index: 5;
     bottom: 20%;
     left: 10%;
     max-width: 80%;
@@ -93,7 +93,7 @@
 }
 .field{
     position: absolute;
-    z-index: 2;
+    z-index: 5;
     top: 3%;
     right: 3%;
     max-width: 80%;
