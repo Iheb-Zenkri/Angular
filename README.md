@@ -1,63 +1,71 @@
-<<<<<<< HEAD
-# Angular
-=======
-# Fundit
+# FundIt - Investor & Entrepreneur Platform
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.3.
+## Description
+**FundIt** is a web-based platform that enables investors to browse, explore, and invest in entrepreneurial projects. The platform provides an intuitive and responsive UI, allowing entrepreneurs to showcase their ideas while investors can easily find potential investment opportunities.
 
-## Development server
+## Features
+- ✅ **Project Listings** – Browse and explore projects from different industries.
+- ✅ **Investor Dashboard** – A clean and organized UI for investors to track potential projects.
+- ✅ **Entrepreneur Profiles** – View entrepreneur details and their project descriptions.
+- ✅ **Modern UI** – Built with **Angular Material** for a sleek and responsive experience.
+- ✅ **Client-Side Routing** – Smooth navigation with Angular Router.
+- ✅ **SSR Support** – Server-side rendering enabled for better performance and SEO.
+- ✅ **Bootstrap Icons** – Lightweight and elegant icons for UI elements.
 
-To start a local development server, run:
+## Tech Stack
+- **Framework:** Angular 19
+- **UI Library:** Angular Material
+- **Icons:** Bootstrap Icons
+- **State Management:** Services-based state
+- **SSR:** Angular Universal
+- **Server (for SSR):** Express.js
+
+## Screenshots
+
+### 1. Home Page
+![Home Page](screenshots/homepage.jpg)
+
+### 2. Landing Page
+![Landing Page](screenshots/landingpage.png)
+
+### 3. Popups
+![Popups](screenshots/popups.jpg)
+
+### 4. Login
+![Login](screenshots/login.png)
+
+### 5. Sign In
+![Sign In](screenshots/signup.png)
+
+### 6. User Type
+![User Type](screenshots/user-type.png)
+
+## Installation & Setup
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/Iheb-Zenkri/Angular.git
+cd fundit
+```
+## 2. Install Dependencies
 
 ```bash
-ng serve
+npm install
 ```
-
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## 3. Run the Development Server
 
 ```bash
-ng generate component component-name
+npm start
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
+## 4. Build for Production
 
 ```bash
 ng build
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+## 5. Run with Server-Side Rendering (SSR)
 
 ```bash
-ng test
+npm run serve:ssr:fundit
 ```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
->>>>>>> 685386d (initial commit)
